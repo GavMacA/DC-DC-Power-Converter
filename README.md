@@ -1,2 +1,19 @@
 # DC-DC-Power-Converter
 Complete design of a DC-DC power converter capable of powering a device using a USB-C cable powered by a DC source while adhering to UDB Power Delivery specs
+The specifications for the design were split in to two domains:
+
+Static:
+- Input Voltage Range = 7.5V - 24V
+- Output Voltage Range = 5V - 15V
+- Max Output Current = 3A
+- Max peak-to-peak variation in the winding less than 25% of the max output current
+- Max output voltage variation +/- 25mV
+
+Dynamic:
+- Response Time less than 1.5ms (to within 5%) during a step from 5V to 12V (Vin = 24V, Rout = 4Ohms)
+- Overshoot: Less than 5% during voltage steps
+- Load Step Recovery: Voltage error less than 1100mV within 1ms after load transition (Vout=5V, Vin=24V, R[load] passes from 3 kOhms to 4 Ohms)
+- Max 2.5V overshoot during a load step (from 3A to 0A)
+
+# Project Components
+Design and size Buck Converter using MATLAB Simulink
