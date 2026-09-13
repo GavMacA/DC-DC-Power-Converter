@@ -16,4 +16,12 @@ Dynamic:
 - Max 2.5V overshoot during a load step (from 3A to 0A)
 
 # Project Components
-Design and size Buck Converter using MATLAB Simulink
+1. Design and size closed loop and open loop Buck Converter using MATLAB Simulink
+Using real world RS components available online we sized components to achieve the above specifications with an approximate efficiency of 90% for the open loop design.
+
+Insert Image
+
+The closed loop design incorporated an adjustable PID regulator to respond to a change in load size or target output voltage.
+
+Insert Image
+
