@@ -19,7 +19,11 @@ Dynamic:
 1. Design and size closed loop and open loop Buck Converter using MATLAB Simulink
 Using real world RS components available online we sized components to achieve the above specifications with an approximate efficiency of 90% for the open loop design.
 
-Insert Image
+<div align="center">
+
+![Open Loop Buck](images/BUCK_OL_Simulink)
+
+</div>
 
 The closed loop design incorporated an adjustable PID regulator to respond to a change in load size or target output voltage.
 
