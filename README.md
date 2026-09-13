@@ -27,5 +27,9 @@ Using real world RS components available online we sized components to achieve t
 
 The closed loop design incorporated an adjustable PID regulator to respond to a change in load size or target output voltage.
 
-Insert Image
+<div align="center">
+
+![Closed Loop Buck](images/BUCK_CL_Simulink)
+
+</div>
 
