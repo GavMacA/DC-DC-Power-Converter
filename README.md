@@ -1,5 +1,5 @@
 # DC-DC-Power-Converter
-Complete design of a DC-DC power converter capable of powering a device using a USB-C cable powered by a DC source while adhering to UDB Power Delivery specs
+Complete design of a DC-DC power converter capable of powering a device using a USB-C cable powered by a DC source while adhering to USB Power Delivery specs
 The specifications for the design were split in to two domains:
 
 Static:
@@ -17,6 +17,7 @@ Dynamic:
 
 # Project Components
 1. Design and size closed loop and open loop Buck Converter using MATLAB Simulink
+
 Using real world RS components available online we sized components to achieve the above specifications with an approximate efficiency of 90% for the open loop design.
 
 <div align="center">
@@ -32,4 +33,7 @@ The closed loop design incorporated an adjustable PID regulator to respond to a 
 ![Closed Loop Buck](images/BUCK_CL_Simulink)
 
 </div>
+
+2. Mapping and Routing of PCB using Altium Designer
+
 
