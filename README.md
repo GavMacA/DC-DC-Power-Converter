@@ -52,3 +52,23 @@ The closed loop design incorporated an adjustable PID regulator to respond to a 
 **PCB - Bottom Layer**
 
 </div>
+
+3. Soldering Standardised routing provided by module coordinators
+
+<div align="center">
+
+![Board Top Layer](images/Physical_Board_Top_Layer.jpeg)
+
+**Board Top Layer**
+
+</div>
+
+
+<div align="center">
+
+![Board Bottom Layer](images/Physical_Board_Bottom_Layer.jpeg)
+
+**Board - Bottom Layer**
+
+</div>
+
