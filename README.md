@@ -36,4 +36,19 @@ The closed loop design incorporated an adjustable PID regulator to respond to a 
 
 2. Mapping and Routing of PCB using Altium Designer
 
+<div align="center">
 
+![PCB Top Layer](images/PCB_Top_Layer.png)
+
+**PCB Top Layer**
+
+</div>
+
+
+<div align="center">
+
+![PCB Bottom Layer](images/PCB_Bottom_Layer.png)
+
+**PCB - Bottom Layer**
+
+</div>
