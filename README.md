@@ -72,4 +72,6 @@ The closed loop design incorporated an adjustable PID regulator to respond to a 
 
 </div>
 
-4. Modifying ESP32 microcontroller code using C
+4. Modifying STM32Cube microcontroller code using C
+
+The final stage of the project gave us several different ideas to focus on when adapting the code. Thus it must beacknowledged that this code is an incomplete prototype. Our focuses were User Interface/Controls, PWM Control, Open and Closed Loop (PI Controls) modes,
