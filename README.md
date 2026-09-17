@@ -74,4 +74,12 @@ The closed loop design incorporated an adjustable PID regulator to respond to a 
 
 4. Modifying STM32Cube microcontroller code using C
 
-The final stage of the project gave us several different ideas to focus on when adapting the code. Thus it must beacknowledged that this code is an incomplete prototype. Our focuses were User Interface/Controls, PWM Control, Open and Closed Loop (PI Controls) modes,
+The final stage of the project gave us several different ideas to focus on when adapting the code. Thus it must be acknowledged that this code is an incomplete prototype. Our focuses were User Interface/Controls, PWM Control, Open and Closed Loop modes and Power Delivery Object mode(PI control used for CL and PDO),                      .
+
+The User interface was implemented using an OLED screen, rotary encoder and button. It offers 4 menus; Diplay of measurements (Vin, Vout, Iout); Control type (OL, CL, PDO); OL setpoint; CL setpoint (set desired output voltage).
+
+- Open Loop - Calculates duty cycle once and sets it fro the PWM signal
+- Closed Loop - Constantly updates the duty cycle using PI in response to fluctuations in the load size to maintain desired voltage output.
+- PDO - Communicates with load object to find out desired voltage output of the converter. Again uses PI to maintain voltage level.
+
+The length of the PWM signal was normalised using a period of 255 to fit 8 bits
