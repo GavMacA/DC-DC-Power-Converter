@@ -12,7 +12,7 @@ Static:
 Dynamic:
 - Response Time less than 1.5ms (to within 5%) during a step from 5V to 12V (Vin = 24V, Rout = 4Ohms)
 - Overshoot: Less than 5% during voltage steps
-- Load Step Recovery: Voltage error less than 1100mV within 1ms after load transition (Vout=5V, Vin=24V, R[load] passes from 3 kOhms to 4 Ohms)
+- Load Step Recovery: Voltage error less than 100mV within 1ms after load transition (Vout=5V, Vin=24V, R[load] passes from 3 kOhms to 4 Ohms)
 - Max 2.5V overshoot during a load step (from 3A to 0A)
 
 # Project Components
@@ -74,12 +74,15 @@ The closed loop design incorporated an adjustable PID regulator to respond to a 
 
 4. Modifying STM32Cube microcontroller code using C
 
-The final stage of the project gave us several different ideas to focus on when adapting the code. Thus it must be acknowledged that this code is an incomplete prototype. Our focuses were User Interface/Controls, PWM Control, Open and Closed Loop modes and Power Delivery Object mode(PI control used for CL and PDO),                      .
+The project was generated in STM32CubeIDE/CubeMX; our work was confined to the USER CODE sections of main.c. The final stage of the project gave us several different ideas to focus on when adapting the code. Thus it must be acknowledged that this code is an incomplete prototype. Our focuses were User Interface/Controls, PWM Control, Open and Closed Loop modes and Power Delivery Object mode (PI control used for CL and PDO).
 
-The User interface was implemented using an OLED screen, rotary encoder and button. It offers 4 menus; Diplay of measurements (Vin, Vout, Iout); Control type (OL, CL, PDO); OL setpoint; CL setpoint (set desired output voltage).
+The User interface was implemented using an OLED screen, rotary encoder and button. It offers 4 menus: Display of measurements (Vin, Vout, Iout), Control type (OL, CL, PDO), OL setpoint, CL setpoint (set desired output voltage).
 
-- Open Loop - Calculates duty cycle once and sets it fro the PWM signal
+- Open Loop - Calculates duty cycle each period using the current input voltage and the user-selected output voltage, with no feedback from the output.
 - Closed Loop - Constantly updates the duty cycle using PI in response to fluctuations in the load size to maintain desired voltage output.
-- PDO - Communicates with load object to find out desired voltage output of the converter. Again uses PI to maintain voltage level.
+- PDO - The controller negotiates the USB-C contract and the firmware reads the agreed profile (5/9/12/15V) and then the PI maintains this level
 
-The length of the PWM signal was normalised using a period of 255 to fit 8 bits
+Direct Memory Access is used for efficient sampling and the PWM output. The ADC by the internal timer and writes its three channels straight to memory. The PWM duty cycle is streamed from a double-buffered array so it can be updated without disturbing the running output. It is 8 bits (0-255) due to the timer's 256-count period.To reduce computational overhead the PI controller coefficents were scaled up in order to avoid floating point values instead completing integer calculations. 
+**Notes/Limitations**
+- Much of the code's comments are in French as this project was completed during an ERASMUS programme.
+- Sections not chosen under the scope: Energy and Power calculations; overload protection; output filtering
