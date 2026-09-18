@@ -23,13 +23,14 @@ DC-DC Power Converter/
 ├── docs/
 │   ├── B5_BALHI_THENOZ_MACAONGHUSA_simu_buck_CREATE_BF.slx
 │   ├── B5_BALHI_THENOZ_MACAONGHUSA_simu_buck_CREATE_BO.slx
-│   ├── main.c   (Microcontroller code)
-│   └── images/
-│       ├── Schematic.png
-│       ├── Sonometre1.png
-│       ├── Sonometre2.png
-│       ├── Sonometre_PCB.jpeg
-│       └── final_result.png
+│   └── main.c   (Microcontroller code)
+├── images/
+│   ├── BUCK_CL_Simulink
+│   ├── BUCK_OL_SIMULINK
+│   ├── PCB_Bottom_Lyer.png
+│   ├── PCB_Top_Layer.png
+│   ├── Physical_Board_Bottom_Layer.jpeg
+│   └── Physical_Board_Top_Layer.jpeg
 ├── LTSpice/
 │   └── sound_level_meter.asc
 └── kicad/
