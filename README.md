@@ -15,7 +15,29 @@ Dynamic:
 - Load Step Recovery: Voltage error less than 100mV within 1ms after load transition (Vout=5V, Vin=24V, R[load] passes from 3 kOhms to 4 Ohms)
 - Max 2.5V overshoot during a load step (from 3A to 0A)
 
-# Project Components
+# Project Structure
+
+```bash
+DC-DC Power Converter/
+├── README.md
+├── docs/
+│   ├── B5_BALHI_THENOZ_MACAONGHUSA_simu_buck_CREATE_BF.slx
+│   ├── B5_BALHI_THENOZ_MACAONGHUSA_simu_buck_CREATE_BO.slx
+│   ├── main.c   (Microcontroller code)
+│   └── images/
+│       ├── Schematic.png
+│       ├── Sonometre1.png
+│       ├── Sonometre2.png
+│       ├── Sonometre_PCB.jpeg
+│       └── final_result.png
+├── LTSpice/
+│   └── sound_level_meter.asc
+└── kicad/
+    ├── sound_level_meter.kicad_pro
+    ├── sound_level_meter.kicad_sch
+    └── sound_level_meter.kicad_pcb
+```
+
 ## Design and size closed loop and open loop Buck Converter using MATLAB Simulink
 
 Using real world RS components available online we sized components to achieve the above specifications with an approximate efficiency of 90% for the open loop design.
