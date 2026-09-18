@@ -1,4 +1,4 @@
-## DC-DC-Power-Converter
+# DC-DC-Power-Converter
 Complete design of a DC-DC power converter capable of powering a device using a USB-C cable powered by a DC source while adhering to USB Power Delivery specs
 The specifications for the design were split in to two domains:
 
@@ -16,7 +16,7 @@ Dynamic:
 - Max 2.5V overshoot during a load step (from 3A to 0A)
 
 # Project Components
-1. Design and size closed loop and open loop Buck Converter using MATLAB Simulink
+## Design and size closed loop and open loop Buck Converter using MATLAB Simulink
 
 Using real world RS components available online we sized components to achieve the above specifications with an approximate efficiency of 90% for the open loop design.
 
@@ -34,7 +34,7 @@ The closed loop design incorporated an adjustable PID regulator to respond to a 
 
 </div>
 
-2. Mapping and Routing of PCB using Altium Designer
+## Mapping and Routing of PCB using Altium Designer
 
 <div align="center">
 
@@ -53,7 +53,7 @@ The closed loop design incorporated an adjustable PID regulator to respond to a 
 
 </div>
 
-3. Soldering Standardised routing provided by module coordinators
+## Soldering Standardised routing provided by module coordinators
 
 <div align="center">
 
@@ -72,7 +72,7 @@ The closed loop design incorporated an adjustable PID regulator to respond to a 
 
 </div>
 
-4. Modifying STM32Cube microcontroller code using C
+## Modifying STM32Cube microcontroller code using C
 
 The project was generated in STM32CubeIDE/CubeMX; our work was confined to the USER CODE sections of main.c. The final stage of the project gave us several different ideas to focus on when adapting the code. Thus it must be acknowledged that this code is an incomplete prototype. Our focuses were User Interface/Controls, PWM Control, Open and Closed Loop modes and Power Delivery Object mode (PI control used for CL and PDO).
 
