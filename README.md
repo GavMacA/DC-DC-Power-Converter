@@ -114,10 +114,11 @@ Direct Memory Access is used for efficient sampling and the PWM output. The ADC 
 
 # My Contributions
 Most tasks were completed collaboratively, the following our sections I contributed to directly.
-Simulink - Design and testing of open loop buck converter
-Altium - Schematic connections, mapping of PCB layout
-PCB - Soldered surface mounted and through-hole components
-Microcontroller code (C) - PWM configuration and non-technical writing of User-interface 
+
+- Simulink - Design and testing of open loop buck converter
+- Altium - Schematic connections, mapping of PCB layout
+- PCB - Soldered surface mounted and through-hole components
+- Microcontroller code (C) - PWM configuration and non-technical writing of User-interface 
 
 # Contributors
 Matteo Thenoz
