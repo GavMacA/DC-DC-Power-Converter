@@ -1,4 +1,4 @@
-# DC-DC-Power-Converter
+## DC-DC-Power-Converter
 Complete design of a DC-DC power converter capable of powering a device using a USB-C cable powered by a DC source while adhering to USB Power Delivery specs
 The specifications for the design were split in to two domains:
 
