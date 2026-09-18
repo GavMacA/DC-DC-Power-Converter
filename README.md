@@ -83,6 +83,21 @@ The User interface was implemented using an OLED screen, rotary encoder and butt
 - PDO - The controller negotiates the USB-C contract and the firmware reads the agreed profile (5/9/12/15V) and then the PI maintains this level
 
 Direct Memory Access is used for efficient sampling and the PWM output. The ADC by the internal timer and writes its three channels straight to memory. The PWM duty cycle is streamed from a double-buffered array so it can be updated without disturbing the running output. It is 8 bits (0-255) due to the timer's 256-count period.To reduce computational overhead the PI controller coefficents were scaled up in order to avoid floating point values instead completing integer calculations. 
+
 **Notes/Limitations**
 - Much of the code's comments are in French as this project was completed during an ERASMUS programme.
 - Sections not chosen under the scope: Energy and Power calculations; overload protection; output filtering
+
+# My Contributions
+Most tasks were completed collaboratively, the following our sections I contributed to directly.
+Simulink - Design and testing of open loop buck converter
+Altium - Schematic connections, mapping of PCB layout
+PCB - Soldered surface mounted and through-hole components
+Microcontroller code (C) - PWM configuration and non-technical writing of User-interface 
+
+# Contributors
+Matteo Thenoz
+Guillaume Balhi
+Gavin Mac Aonghusa
+
+
