@@ -31,15 +31,13 @@ DC-DC Power Converter/
 │   ├── PCB_Top_Layer.png
 │   ├── Physical_Board_Bottom_Layer.jpeg
 │   └── Physical_Board_Top_Layer.jpeg
-├── LTSpice/
-│   └── sound_level_meter.asc
 └── Altium/
-    ├── A4_INSAGE_01.SchDoc
-    ├── A4_INSAGE_02.SchDoc
-    ├── A4_INSAGE_03.SchDoc
-    ├── Altium CREATE 2026.PrjPcb
-    ├── Altium_CREATE_2026.IntLib
-    └── PCB1_INSAGE.PcbDoc
+│   ├── A4_INSAGE_01.SchDoc
+│   ├── A4_INSAGE_02.SchDoc
+│   ├── A4_INSAGE_03.SchDoc
+│   ├── Altium CREATE 2026.PrjPcb
+│   ├── Altium_CREATE_2026.IntLib
+│   └── PCB1_INSAGE.PcbDoc
 ```
 
 ## Design and size closed loop and open loop Buck Converter using MATLAB Simulink
