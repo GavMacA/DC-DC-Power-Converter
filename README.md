@@ -97,7 +97,9 @@ Microcontroller code (C) - PWM configuration and non-technical writing of User-i
 
 # Contributors
 Matteo Thenoz
+
 Guillaume Balhi
+
 Gavin Mac Aonghusa
 
 
